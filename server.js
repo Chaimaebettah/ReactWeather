@@ -7,13 +7,13 @@ const PORT = process.env.PORT || 3000;
 
 //app.enable('trust proxy');
 
-app.use(function (req, res, next){
-  console.log(req.secure);
-  if (req.headers['x-forwarded-proto'] === 'https') {
-    res.redirect('http://' + req.hostname + req.url);
-  }
-  next();
-});
+//app.use(function (req, res, next){
+//  console.log(req.secure);
+//  if (req.headers['x-forwarded-proto'] === 'https') {
+//    res.redirect('http://' + req.hostname + req.url);
+//  }
+//  next();
+//});
 
 app.use(express.static('public'));
 
