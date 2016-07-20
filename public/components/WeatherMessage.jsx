@@ -5,7 +5,7 @@ var WeatherForm=(props) =>{
   var degree= props.degree;
   return (
     <div>
-      <p>the weather in {location} is {degree} degree </p>
+      <h4 className="text-center">the weather in {location} is {degree} degree </h4>
 
     </div>
 

@@ -7,7 +7,7 @@ var AxiosExample = require('AxiosExample');
 var Weather = React.createClass({
   getInitialState(){
     return{
-      location:'morocco',
+      location:'Boston',
       degree:23
     }
   },
@@ -30,7 +30,7 @@ var Weather = React.createClass({
     var degree= this.state.degree;
     return (
       <div>
-        <h5>this is the weather page </h5>
+        <h1 className="text-center">Get Weather </h1>
         <WeatherForm onNewLocation={this.handleNewLocation}/>
         <WeatherMessage location={location} degree={degree}/>
 
